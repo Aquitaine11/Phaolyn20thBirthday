@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Phao</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="index-bg">
+
+
+  <!-- Background Music -->
+  <audio id="bg-music" class="music" controls loop>
+    <source src="music/seasons.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+
+  <!-- Header -->
+  <header class="navbar">
+    <h2>20th Birthday</h2>
+    <nav>
+      <a href="letter.html" class="nav-btn">Letters</a>
+    </nav>
+  </header>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <video controls>
+      <source src="videos/birthday.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Happy Birthday, Phao!</h1>
+    <p>I made this website for your birthday. I hope you like it.</p>
+    <button onclick="revealMessage()">Click here for your birthday wish</button>
+  </section>
+
+  <!-- Surprise Message -->
+  <section class="surprise" id="surprise">
+    <h2>💌 My Wish for Your 20th Birthday</h2>
+    <p>
+      Happy 20th Birthday, Pauw! Wishing you a successful year in your studies,
+      good health, happiness with your friends, sa organization niyo, and
+      especially kanila Tita, Tito, Ate, at Thea. May this new chapter of your
+      life be filled with blessing, joy, and growth.
+    </p>  
+  </section>
+
+  <!-- Gallery / Carousel -->
+  <section class="gallery">
+    <h2>Memories</h2>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-slide"><img src="images/4.jpeg" alt="Memory 1"></div>
+        <div class="carousel-slide"><img src="images/3.jpeg" alt="Memory 2"></div>
+        <div class="carousel-slide"><img src="images/2.jpeg" alt="Memory 3"></div>
+        <div class="carousel-slide"><img src="images/1.jpg" alt="Memory 4"></div>
+        <div class="carousel-slide"><img src="images/4.jpg" alt="Memory 5"></div>
+        <div class="carousel-slide"><img src="images/5.jpg" alt="Memory 6"></div>
+        <div class="carousel-slide"><img src="images/6.jpeg" alt="Memory 7"></div>
+        <div class="carousel-slide"><img src="images/7.jpeg" alt="Memory 8"></div>
+        <div class="carousel-slide"><img src="images/8.jpeg" alt="Memory 9"></div>
+        <div class="carousel-slide"><img src="images/9.jpeg" alt="Memory 10"></div>
+        <div class="carousel-slide"><img src="images/10.jpeg" alt="Memory 11"></div>
+        <div class="carousel-slide"><img src="images/11.jpeg" alt="Memory 12"></div>
+        <div class="carousel-slide"><img src="images/12.jpeg" alt="Memory 13"></div>
+        <div class="carousel-slide"><img src="images/13.jpeg" alt="Memory 14"></div>
+        <div class="carousel-slide"><img src="images/14.jpeg" alt="Memory 15"></div>
+      </div>
+      <!-- Arrows -->
+      <button class="carousel-arrow prev">❮</button>
+      <button class="carousel-arrow next">❯</button>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <button class="lightbox-arrow prev">❮</button>
+    <button class="lightbox-arrow next">❯</button>
+  </div>
+
+  <div class="floating-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
